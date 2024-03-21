@@ -8,7 +8,7 @@ breads.get('/', (req, res) => {
 })
 
 //SHOW
-breads.get('/:arrayIndex', (req, res) =>{
+breads.get('/:arrayIndex', (req, res) =>{  ///breads/{0}
     res.send(Bread[req.params.arrayIndex]) // req.params.arrayIndex is the index of the array
 })
 
