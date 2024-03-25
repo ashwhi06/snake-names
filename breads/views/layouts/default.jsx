@@ -4,7 +4,7 @@ function Default(html) {
   return (
     <html>
         <head>
-            <title>Default Views Page</title>
+            <title>{html.title || 'Default'}</title>
         </head>
         <body>
             <h1>HTML Rendered!</h1>

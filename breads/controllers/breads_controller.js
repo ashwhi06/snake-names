@@ -6,7 +6,8 @@ const Bread = require('../models/bread.js')
 breads.get('/', (req, res) => {
   res.render('Index',
     {
-      breads: 'Bread'
+      breads: 'Bread',
+      title: 'View Index Page'
     }
   )
   //res.send(Bread) // Displays the array of BREAD objects
