@@ -13,12 +13,17 @@ breads.get('/', (req, res) => {
   //res.send(Bread) // Displays the array of BREAD objects
 })
 
-//SHOW
-breads.get('/:arrayIndex', (req, res) =>{  ///breads/{0}
-    res.render('Show',{
-      bread: Bread[req.params.arrayIndex],
-      title: 'View Show Page'
-    }) 
+//SHOW /breads/{0}
+breads.get('/:arrayIndex', (req, res) =>{  
+   if (Bread[req.params.arrayIndex]) {
+      res.render('Show',{
+        bread: Bread[req.params.arrayIndex],
+        title: 'View Show Page'
+      }) 
+   } else {
+    res.send('404: Bread not found')
+   }
 })
+
 
 module.exports = breads

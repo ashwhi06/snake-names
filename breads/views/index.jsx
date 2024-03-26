@@ -2,7 +2,6 @@ const React = require("react");
 const Default = require("./layouts/default.jsx");
 
 function Index({ breads, title }) {
-    console.log(title);
   return (
     <Default title={title}>
       <h2>Index Page</h2>

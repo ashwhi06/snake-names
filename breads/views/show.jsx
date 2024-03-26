@@ -2,7 +2,7 @@ const React = require('react')
 const Default = require("./layouts/default.jsx")
 
 function Show({bread}) {
-    console.log(bread.name)
+    console.log(bread.image)
     return(
         <Default>
             <h2>Show Page</h2>
@@ -11,12 +11,12 @@ function Show({bread}) {
                 and it 
                 {
                     bread.hasGluten
-                    ? <span>does </span> 
-                    : <span>does Not </span>
+                    ? <span> does </span> 
+                    : <span> does Not </span>
                 }
                 have gluten
             </p>
-            <img src="{bread.image}" alt="{bread.name}" />
+            <img src={`${bread.image}`} alt="{bread.name}" />
             <li>
                 <a href="/breads">Go Home</a>
             </li>
