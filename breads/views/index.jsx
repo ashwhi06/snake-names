@@ -19,6 +19,9 @@ function Index({ breads, title }) {
           <p>Breads not found</p>
         )}
       </ul>
+      <div className='newButton'>
+        <a href='/breads/new'><button>Add a new bread</button></a>
+      </div>
     </Default>
   );
 }
