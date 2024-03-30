@@ -8,6 +8,6 @@ img {
   margin: auto;
 }
 
-.listStyle {
+li {
   list-style: none;
 }
