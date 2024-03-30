@@ -4,7 +4,7 @@ function Default(html) {
   return (
     <html>
       <head>
-        <title>{html.title || "Default"}</title>
+        <title>{html.title || 'Default'}</title>
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
@@ -22,7 +22,9 @@ function Default(html) {
               <a href='/breads'>BreadCRUD</a>
             </h1>
           </header>
-          <div className='container'>{html.children}</div>
+          <div className='container'>
+            {html.children}
+            </div>
         </div>
       </body>
     </html>
